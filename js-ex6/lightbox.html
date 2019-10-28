@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LightBox</title>
+    <link href="./lightbox.css" rel="stylesheet">
+</head>
+<body>
+    <h2 style="text-align: center;">LightBox</h2>
+
+    <div class="row">
+        <div class="column">
+            <img src="./111.jpg" style="width: 100%;" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="./112.jpg" style="width: 100%;" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="./113.jpg" style="width: 100%;" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="./114.jpg" style="width: 100%;" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+        </div>
+    </div>
+
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+
+            <div class="mySlides">
+                <div class="numbertext">1/4</div>
+                <img src="./111.jpg" style="width: 100%;">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">2/4</div>
+                <img src="./112.jpg" style="width: 100%;">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">3/4</div>
+                <img src="./113.jpg" style="width: 100%;">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">4/4</div>
+                <img src="./114.jpg" style="width: 100%;">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+
+
+            <div class="column">
+                <img class="demo cursor" src="111.jpg" style="width:100%" onclick="currentSlide(1)" alt="first picture">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="112.jpg" style="width:100%" onclick="currentSlide(2)" alt="second picture">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="113.jpg" style="width:100%" onclick="currentSlide(3)" alt="third picture">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="114.jpg" style="width:100%" onclick="currentSlide(4)" alt="forth picture">
+            </div>
+  
+        </div>
+    </div>
+    <script src="./lightbox.js"></script>
+</body>
+</html>
