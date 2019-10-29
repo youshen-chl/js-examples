@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>选项卡 - 淡入效果</title>
+    <link href="./topSelect.css" rel="stylesheet">
+</head>
+<body>
+    <h3>选项卡 - 淡入效果</h3>
+
+    <div class="tab">
+        <button class="tablinks" onclick="openCity(event,'London')">London</button>
+        <button class="tablinks" id="defaultopen" onclick="openCity(event,'Paris')">Paris</button>
+        <button class="tablinks" onclick="openCity(event,'Beijing')">Beijing</button>
+        
+    </div>
+
+    <div class="tabcontent" id="London">
+        <span onclick="this.parentNode.style.display = 'none' " class="topright">X</span>
+        <h3>London</h3>
+        <p>London is the capital city of UK.</p>
+    </div>
+    <div class="tabcontent" id="Paris">
+        <span onclick="this.parentNode.style.display = 'none' " class="topright">X</span>
+        <h3>Paris</h3>
+        <p>Paris is the capital city of France.</p>
+    </div>
+    <div class="tabcontent" id="Beijing">
+        <span onclick="this.parentNode.style.display = 'none' " class="topright">X</span>
+        <h3>Beijing</h3>
+        <p>Beijing is the capital city of China.</p>
+    </div>
+
+    <script src="./topSelect.js"></script>
+</body>
+</html>
