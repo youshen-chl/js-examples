@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>响应式顶部导航样式实例</title>
+    <link href="./topnav.css" rel="stylesheet">
+</head>
+<body>
+    <div class="topnav" id="myTopnav">
+        <div class="dropdown">
+            <a href="#home">主页</a>
+        </div>
+        <div class="dropdown">
+            <a href="#news">新闻</a>
+            <a href="#today-news" class="dropdown-content">今天发生</a>
+        </div>
+        <div class="dropdown">
+            <a href="#contact">联系方式</a>
+            <a href="#tel" class="dropdown-content">联系电话</a>
+        </div>
+        <div class="dropdown">
+            <a href="#about">关于我们</a>
+            <a href="#history" class="dropdown-content">公司历史</a>
+            <a href="#develop" class="dropdown-content">发展趋势</a>
+        </div>
+        <div class="dropdown"></div>
+        <a href="javascript:void(0)" style="font-size: 15px;" class="icon" onclick="myFunc()">
+            &#9776;</a>
+        </div>
+    </div>
+    <div style="padding-left: 16px;">
+        <h2>响应式顶部导航栏实例</h2>
+        <p>改变浏览器窗口大小看看效果！</p>
+    </div>
+
+    <script src="./topnav.js"></script>
+</body>
+</html>
