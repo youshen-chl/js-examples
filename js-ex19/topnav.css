@@ -59,10 +59,6 @@ div.dropdown:hover .dropdown-content{
     div.dropdown:hover .dropdown-content{
         display: none;
     }
-    div.dropdown-content.show {
-        position: static;
-        display: block;
-    }
 }
 
 @media screen and (max-width: 600px) {
@@ -76,5 +72,8 @@ div.dropdown:hover .dropdown-content{
         float: none;
         display: block;     
     }
-
+    .topnav.responsive>div div.show {
+        position: static;
+        display: block;
+    }
 }

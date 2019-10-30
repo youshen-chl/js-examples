@@ -84,16 +84,12 @@ a.icon:hover {
         right: 0;
     }
 
-    .topnav.responsive ul.top-level>li .two-level{
-        position: absolute;
-        width: auto;
-        /* top: 41px; */
-    }
     .topnav.responsive ul.top-level>li .two-level>li {
         padding-bottom: 0px;
     }
 
     .topnav.responsive ul.top-level>li ul.show {
+        width: auto;
         position: static;
         display: block;
     }
