@@ -6,3 +6,8 @@ function myFunc(){
         x.className = 'topnav';
     }
 }
+
+function showDetail(evt){
+    evt.currentTarget.lastElementChild.classList.toggle('show');
+    // alert(evt.currentTarget.lastElementChild.textContent)
+}
