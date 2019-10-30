@@ -65,6 +65,9 @@ a.icon:hover {
         /* float: right; */
         display: block;
     }
+    .topnav ul.top-level>li:hover .two-level{
+        display: none;     
+    }
 }
 @media screen and (max-width: 600px) {
     .topnav.responsive ul.top-level>li {
@@ -84,10 +87,13 @@ a.icon:hover {
     .topnav.responsive ul.top-level>li .two-level{
         position: absolute;
         width: auto;
-        top: 41px;
+        /* top: 41px; */
+    }
+    .topnav.responsive ul.top-level>li .two-level>li {
+        padding-bottom: 0px;
     }
 
-    .topnav.responsive ul.top-level>li:hover .two-level {
+    .topnav.responsive ul.top-level>li ul.show {
         position: static;
         display: block;
     }

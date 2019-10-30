@@ -6,3 +6,8 @@ function myFunc(){
         x.className = 'topnav';
     }
 }
+
+function showDetal(evt){
+    evt.currentTarget.children[1].classList.toggle('show')
+
+}
