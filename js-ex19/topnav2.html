@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>响应式顶部导航样式实例</title>
+    <link href="./topnav2.css" rel="stylesheet">
+</head>
+<body>
+    <div class="topnav" id="myTopnav">
+        <ul class="top-level">
+            <li><a href="#home">主页</a></li>
+
+            <li onclick="showDetal(event)"><a href="#news">新闻</a>
+                <ul class="two-level">
+                    <li><a href="#today-news" >今天发生</a></li>
+                </ul>
+            </li>
+
+            <li onclick="showDetal(event)"><a href="#contact">联系方式</a>
+                <ul class="two-level">
+                    <li><a href="#tel" >联系电话</a></li>
+                </ul>
+            </li>
+
+            <li onclick="showDetal(event)"><a href="#about">关于我们</a>
+                <ul class="two-level">
+                    <li><a href="#history" >公司历史</a></li>
+                    <li><a href="#develop" >发展趋势</a></li>
+                </ul>
+            </li>
+            
+            <li><a href="javascript:void(0)" style="font-size: 16px;" class="icon" onclick="myFunc()">
+                    &#9776;</a>
+            </li>
+        </ul>
+    </div>
+    <div style="padding-left: 16px;">
+        <h2>响应式顶部导航栏实例</h2>
+        <p>改变浏览器窗口大小看看效果！</p>
+    </div>
+
+    <script src="./topnav.js"></script>
+</body>
+</html>
