@@ -16,3 +16,17 @@ var xiaohong = new Student('小红');
     xiaohong.hello();
     console.log(xiaoming.hello === xiaohong.hello);
 }
+
+
+var P = function () {};
+var p = new P();
+
+var C = function () {};
+C.prototype = p;
+console.log('C.prototype.constructor === P = ', C.prototype.constructor === P );
+var c = new C();
+console.log('C.prototype.constructor === P2 = ', C.prototype.constructor === P );
+console.log('c.constructor.prototype = ',c.constructor.prototype === p );
+console.log('C.prototype : ', C.prototype  === C);
+console.log(Object.getPrototypeOf(c) === p);
+console.log(Object.getPrototypeOf(C.prototype) === P.prototype);
